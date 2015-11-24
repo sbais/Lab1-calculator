@@ -1,0 +1,29 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<h1>Simple Calculator</h1>
+<p><b>Addition</b>: Please enter any two numbers</p>
+<form action="/add" method="post">
+<input type = "text" name = "a1" size = "10"> + <input type = "text" name = "b1" size = "10"> <input type = "submit" value = "="> <% if(answer1 != 0){ %> <%= answer1 %> <% } %>
+</form>
+
+<p><b>Subtraction</b>: Please enter any two numbers</p>
+<form action="/subtract" method="post">
+<input type = "text" name = "a2" size = "10"> - <input type = "text" name = "b2" size = "10"> <input type = "submit" value = "="> <% if(answer2 != 0){ %> <%= answer2 %> <% } %>
+</form>
+
+<p><b>Multiplication</b>: Please enter any two numbers</p>
+<form action="/multiply" method="post">
+<input type = "text" name = "a3" size = "10"> * <input type = "text" name = "b3" size = "10"> <input type = "submit" value = "="> <% if(answer3 != 0){ %> <%= answer3 %> <% } %>
+</form>
+
+<p><b>Division</b>: Please enter any two numbers</p>
+<form action="/divide" method="post">
+<input type = "text" name = "a4" size = "10"> / <input type = "text" name = "b4" size = "10"> <input type = "submit" value = "="> <% if(answer4 != 0){ %> <%= answer4 %> <% } %>
+</form>
+
+</body>
+</html>
